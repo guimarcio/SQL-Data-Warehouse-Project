@@ -1,4 +1,6 @@
-/* Most part of transformations is here */
+/* 	Most part of transformations is here 
+	This stored procedure refers to all transfomations that are done daily on the data from the bronze layer.	
+*/
 
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 BEGIN
