@@ -1,4 +1,6 @@
--- Ingestion of data through bulk method (everything in once) in bronze layer: stored procedure that should be executed daily
+/* 	Ingestion of data through bulk method (everything in once) in bronze layer: stored procedure that should be executed daily
+	This layer keeps all the raw data that are loaded from the files as an everyday execution.
+*/
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS 
 BEGIN
