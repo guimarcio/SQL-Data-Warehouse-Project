@@ -1,3 +1,9 @@
+/*
+	This script put together all the data to be consumed by different company teams.
+	They were chosen to be views, so both tables don't need to be phisically stored in a hardware.
+	All the data here comes from ONLY the transformed data layer (silver layer).
+*/
+
 CREATE VIEW gold.dim_customers AS
 SELECT
 	ROW_NUMBER() OVER (ORDER BY cst_id) AS customer_key, -- surrogate key
